@@ -25,5 +25,7 @@
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="lib" path="C:/Users/Halesh/Downloads/selenium-server-standalone-3.14.0(1).jar"/>
 	<classpathentry kind="lib" path="C:/Users/Halesh/Downloads/selenium-server-standalone-3.141.59(1).jar"/>
+	<classpathentry kind="lib" path="/Advance Selenium/Software/selenium-server-standalone-3.14.0(1).jar"/>
+	<classpathentry kind="lib" path="C:/Users/Halesh/Downloads/geckodriver-v0.29.0-win64.zip"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

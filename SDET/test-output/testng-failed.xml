@@ -3,11 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Vtigercrm.Scenario5">
+      <class name="com.crm.comcasr.purchaseordertest.TestcaseID_15">
         <methods>
-          <include name="test"/>
+          <include name="configAC"/>
+          <include name="configAS"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="createPurchase"/>
+          <include name="configBM"/>
         </methods>
-      </class> <!-- Vtigercrm.Scenario5 -->
+      </class> <!-- com.crm.comcasr.purchaseordertest.TestcaseID_15 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

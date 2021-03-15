@@ -13,7 +13,7 @@ public class Login {   /*Rule 1 */
 	}
 
 
-	@FindAll({ @FindBy(id = "userid") , @FindBy(name = "user_name")})
+	@FindBy(name = "user_name")
 	private WebElement userNameEdt;
 
 
@@ -23,11 +23,11 @@ public class Login {   /*Rule 1 */
 	@FindBy(id = "submitButton")
 	private WebElement loginBtn;
 
-	public WebElement getUserNameEdt() {    //Rule-3 : 
+	public WebElement getUserNameEdt(String string) {    //Rule-3 : 
 		return userNameEdt;
 	}
 
-	public WebElement getPasswordEdt() {
+	public WebElement getPasswordEdt(String string) {
 		return passwordEdt;
 	}
 

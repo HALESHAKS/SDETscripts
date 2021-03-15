@@ -115,12 +115,20 @@ public class WebDriverUtility {
 				((JavascriptExecutor)driver).executeScript("window.scrollBy(0,"+y+")");
 			}
 			
-			public void takeScreenShot(WebDriver driver,String methodName) throws IOException {
+			public String takeScreenShot(WebDriver driver,String methodName) throws IOException {
+				
 				JavaUtility jUtil=new JavaUtility();
 				TakesScreenshot ts = (TakesScreenshot)driver;
 				File src = ts.getScreenshotAs(OutputType.FILE);
-				File dest=new File(".\\Screenshot\\"+methodName+jUtil.getDateandTime()+".png");
+				//File dest=new File(".\\Screenshot\\"+methodName+jUtil.getDateandTime()+".png");
+				File dest=new File(screenShotpath);
 				Files.copy(src, dest);
+				return screenShotpath;
+			}
+
+			public void waitForHTMLDOM(WebDriver driver) {
+				// TODO Auto-generated method stub
+				
 			}
 
 		}
